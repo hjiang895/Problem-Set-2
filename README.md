@@ -46,7 +46,30 @@ This will create a new file, `PartOne.class`, which is the Java byte code that c
 4. This should print ``Hello, World!`` to the screen.
 
 
-### Part 2 (2 points)
+### Part 2 (2 points) 
+Java programs can receive *command line arguments* (i.e., input provided on the command line when running the program) just as they can in Python. The body of any `main` function in Java can access the command line arguments in the array `args` that we have seen in the declaration `public static void main (String[] args)`. In the following command:
+
+   ```java
+   [bash ps1]$ java PartTwo Boston College
+   ```
+
+   `args.length` would be `2`, the string `"Boston"` would be in `args[0]` while the string `"College"` would be the value in `args[1]`. 
+
+In the `PartTwo.java` file, rewrite function so that it accepts a name from the command line. Running it as in
+
+   ```java
+   [bash ps1]$ java PartTwo Mookie
+   ```
+
+   should print
+
+   ```java
+   Hello, Mookie!
+   ```
+
+Make sure you did it right by compiling and running your code, as described in Part 1.
+
+### Part 3 (2 points)
 Java's `System` package has utilities for reading in input and printing out output (I/O). You have seen `System.out.println` which prints to standard out (i.e., the screen) whatever you give it as an argument. There's also a handy function named `format` in `System.out` which supports formatted output and does not include a new line at the end by default.  For example, the call
 
    ```java
@@ -65,40 +88,23 @@ Java's `System` package has utilities for reading in input and printing out outp
    int x = 12;
    String y = "seltzer";
    double z = 3.14;
-   System.out.format("My favorite drink is %s, my favorite number is %d, and my favorite truncation of pi is %f%n", y, x, z);
+   System.out.format("My favorite drink is %s, my favorite number is %d, and my favorite truncation of pi is %.2f%n", y, x, z);
    ```
 
    would print out
 
    ```bash
- My favorite drink is seltzer, my favorite number is 12, and my favorite truncation of pi is 3.140000
+ My favorite drink is seltzer, my favorite number is 12, and my favorite truncation of pi is 3.14
    ```
 
-1. Modify the file `PartOne.java` so that it uses `System.out.format` to print `Hello World!` instead of `System.out.println`. Of course, this can be done  without a hole at all, but you should write it as shown above so that it uses `%s`. Write this code within the `main` function within the `PartOne` class:
+1. Make a new file called `PartThree.java`. Copy and paste the contents of `PartOne.java` into this new file. 
 
-2. Make sure you did it right by compiling and running your code, as described in Part 1.
+2. Find the line of code that uses `System.out.println`.
 
+3. Rewrite this line of code to do 2 things: (1) Use `System.out.format` instead of `System.out.println`. (2) Using `args[0]`, make this line print out a hello to the first command line argument. If the first command line argument is `Awkwafina`, then your program shoud print out `Hello, Awkwafina!`. 
 
-### Part 2 (2 points) 
-Java programs can receive *command line arguments* (i.e., input provided on the command line when running the program) just as they can in Python. The body of any `main` function in Java can access the command line arguments in the array `args` that we have seen in the declaration `public static void main (String[] args)`. In the following command:
+4. Make sure you did it right by compiling and running your code, as described in Part 1.
 
-   ```java
-   [bash ps1]$ java PartTwo Boston College
-   ```
-
-   `args.length` would be `2`, the string `"Boston"` would be in `args[0]` while the string `"College"` would be the value in `args[1]`. 
-
-In the `PartTwo.java` files, rewrite function so that it accepts a name from the command line. Running it as in
-
-   ```java
-   [bash ps1]$ java PartTwo Mookie
-   ```
-
-   should print
-
-   ```java
-   Hello, Mookie!
-   ```
 
 ### Part 3 (2 points) 
 Java is notorious for its complicated I/O (input/output) architecture. The `algs4.jar` library you installed in ps0.5 provides a simpler interface for I/O. In this problem you'll use the `readString` function from `StdIn` from that library. You will use the `StdIn.readString` function to interactively prompt the user for a name, rather than having the user supply the name on the command line. Write this code in PartThree.java, then compile and run to make sure it works. Running that program should go as follows:
