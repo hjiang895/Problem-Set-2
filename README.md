@@ -127,7 +127,7 @@ the program should print out
 7 is an odd number
 ```
 
-You will need to use `System.out.format`, `args[0]`, and the mathematical operator called modulus `%`. The modulus operator returns the remainder when dividing the first number by the second number. If `a % 2` is equal to 0, then `a` is an even number. Otherwise, `a` is odd.  
+You will need to use `System.out.format`, `args[0]`, and the mathematical operator called modulus `%`. The modulus operator returns the remainder when dividing the first number by the second number. If `a % 2` is equal to 0, then `a` is an even number, because all even numbers are divisible by 2 (i.e., they give a remainder of 0 when divided by 2). Otherwise, `a` is odd.  
 
 ### Part 5 (3 points) 
 Now create a new file in `src` called `PartFive.java`. You will write a program that takes an integer `n` as a command line argument and then uses `n` to determine how many times to print the string:
@@ -151,7 +151,9 @@ Now create a new file in `src` called `PartFive.java`. You will write a program 
    This does not spark joy.
    ```
 
-   For this problem you'll need to figure out how to do two things: (1) to convert a string representation of an integer such as `"343"` to an actual `int` `343`, and (2) to call the `System.out.println` function repeatedly. For the former, take a stroll through [the documentation for Java's built-in `Integer` class](https://docs.oracle.com/javase/8/docs/api/?java/lang/Integer.html) to see if there are any pre-defined library functions that might convert a string such as `"343"` to an integer `343`. For the latter, refer to the class notes on for-loops in Java, look at the text book appendix on Java, or simply Google around a bit for information on Java for-loops, which are a bit different from `for` statements in Python. 
+For this problem you'll need to figure out how to do two things: (1) to convert a string representation of an integer such as `"343"` to an actual `int` `343`, and (2) to call the `System.out.println` function repeatedly. For the former, take a stroll through [the documentation for Java's built-in `Integer` class](https://docs.oracle.com/javase/8/docs/api/?java/lang/Integer.html) to see if there are any pre-defined library functions that might convert a string such as `"343"` to an integer `343`. For the latter, refer to the class notes on for-loops in Java, look at the text book appendix on Java, or simply Google around a bit for information on Java for-loops, which are a bit different from `for` statements in Python. 
+
+---
 
 Once your code works to your satisfaction, save the files, stage them, commit them, and push them to your personal master repo on the GitHub Classroom site, as you did for ps1. Use the commit message "READY FOR GRADING" so we know you are done. For a reminder about how to do this, see ps1.
 
