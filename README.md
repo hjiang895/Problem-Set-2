@@ -1,8 +1,6 @@
 # Problem Set 2: Getting Started with Java
 ## Due Thursday, January 24, 11:59pm EST
 
----
-
 This problem will allow you to get more comfortable writing, compiling, and running code in Java. This problem set will also introduce you to using Slack to ask questions. If you are new to Java, I am expecting you to write the code in Atom and to compile and run the code using the platformio-ide-terminal package within Atom or with cmd (Windows) or Terminal (Mac) outside of Atom.
 
 ---
