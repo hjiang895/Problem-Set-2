@@ -32,7 +32,7 @@ When you have a question on this problem set, post it to Stack. Remember to incl
 
 2. Click on the `src`  folder in the tree structure on the left, then go to ``Packages -> platformio-ide-terminal -> New Terminal``. 
 
-3. In the terminal, make sure you're in the `src` directory by typing `pwd`. If you're not, use the `cd` command (e.g., `cd src` or `cd ..` to navigate to the `src` directory. Then type the following by the blinking curson in the terminal to compile the code in `PartOne.java`. **NOTE** Everything up to and including the `$` is what the prompt looks like on my computer. It might look different on your computer, but it will probably end with `$`. You only need to type everything that comes after the `$` below.
+3. In the terminal, make sure you're in the `src` directory by typing `pwd`. If you're not, use the `cd` command (e.g., `cd src` or `cd ..` to navigate to the `src` directory. Then type the following by the blinking cursor in the terminal to compile the code in `PartOne.java`. **NOTE:** Everything up to and including the `$` is what the prompt looks like on my computer. It might look different on your computer, but it will probably end with `$`. You only need to type everything that comes after the `$` below.
 
 ```bash
 [bash ps1]$ javac PartOne.java
