@@ -139,7 +139,7 @@ Now create a new file in `src` called `PartFive.java`. You will write a program 
    For example, the call
 
    ```java
-   [bash ps1]$ java PartFour 4
+   [bash ps1]$ java PartFive 4
    ```
 
    would print
